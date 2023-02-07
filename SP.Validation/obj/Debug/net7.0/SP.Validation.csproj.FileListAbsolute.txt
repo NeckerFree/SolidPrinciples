@@ -1,0 +1,15 @@
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\bin\Debug\net7.0\SP.Validation.exe
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\bin\Debug\net7.0\SP.Validation.deps.json
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\bin\Debug\net7.0\SP.Validation.runtimeconfig.json
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\bin\Debug\net7.0\SP.Validation.dll
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\bin\Debug\net7.0\SP.Validation.pdb
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\obj\Debug\net7.0\SP.Validation.csproj.AssemblyReference.cache
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\obj\Debug\net7.0\SP.Validation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\obj\Debug\net7.0\SP.Validation.AssemblyInfoInputs.cache
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\obj\Debug\net7.0\SP.Validation.AssemblyInfo.cs
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\obj\Debug\net7.0\SP.Validation.csproj.CoreCompileInputs.cache
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\obj\Debug\net7.0\SP.Validation.dll
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\obj\Debug\net7.0\refint\SP.Validation.dll
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\obj\Debug\net7.0\SP.Validation.pdb
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\obj\Debug\net7.0\SP.Validation.genruntimeconfig.cache
+C:\Elio\Development\Projects\SolidPrinciples\SP.Validation\obj\Debug\net7.0\ref\SP.Validation.dll
