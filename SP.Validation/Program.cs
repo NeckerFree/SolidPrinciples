@@ -9,8 +9,11 @@ using SP.Validation.Models;
 using SP.Validation.Principles._2_OCP;
 using SP.Validation.Principles._3_LSP;
 using SP.Validation.Principles._4_ISP.Implementation;
+using SP.Validation.Principles._5_DIP;
+using SP.Validation.Principles._5_DIP.Implementation;
 using SP.Validation.Principles.SRP;
 using SP.Validation.Principles.SRP.Implementation;
+using static SP.Validation.Models.Enumerations;
 
 
 #region 01 SRP
@@ -162,15 +165,64 @@ using SP.Validation.Principles.SRP.Implementation;
 //airplaneIni.Fly();
 #endregion
 #region ISP Applied
-MultifunctionalCar_ISP mfIni = new MultifunctionalCar_ISP();
-mfIni.Drive();
-mfIni.Fly();
+//MultifunctionalCar_ISP mfIni = new MultifunctionalCar_ISP();
+//mfIni.Drive();
+//mfIni.Fly();
 
-Car_ISP carIni = new Car_ISP();
-carIni.Drive();
+//Car_ISP carIni = new Car_ISP();
+//carIni.Drive();
 
-Airplane_ISP airplaneIni = new Airplane_ISP();
-airplaneIni.Fly();
+//Airplane_ISP airplaneIni = new Airplane_ISP();
+//airplaneIni.Fly();
 #endregion
 
+#endregion
+
+#region 05 DIP
+//we should create the higher-level modules with its complex logic in such a way
+//to be reusable and unaffected by any change from the lower-level modules in our application.
+//To achieve this kind of behavior in our apps, we introduce abstraction which decouples
+//higher from lower-level modules.
+
+//Having this idea in mind the Dependency Inversion Principle states that
+
+//High-level modules should not depend on low-level modules, both should depend on abstractions.
+//Abstractions should not depend on details. Details should depend on abstractions.
+#region Initial
+//EmployeeManager_Initial employeeManager = new EmployeeManager_Initial();
+//employeeManager.AddEmployee(new Employee
+//{
+//     Gender= Enumerations.Gender.Male,
+//      Name="Elio Nel",
+//       Position= Enumerations.Position.Manager
+//});
+//employeeManager.AddEmployee(new Employee
+//{
+//    Gender = Enumerations.Gender.Female,
+//    Name = "Adriana",
+//    Position = Enumerations.Position.Manager
+//});
+//employeeManager.AddEmployee(new Employee
+//{
+//    Gender = Enumerations.Gender.Female,
+//    Name = "Catalina",
+//    Position = Enumerations.Position.Manager
+//});
+//EmployeeStatistics_Initial employeeStatistics = new EmployeeStatistics_Initial(employeeManager);
+//Console.WriteLine($"Count Females Managers: {employeeStatistics.CountFemaleManagers()}");
+#endregion
+#region DIP Applied
+//var empManager = new EmployeeManager_DIP();
+//empManager.AddEmployee(new Employee { Name = "Leen", Gender = Gender.Female, Position = Position.Manager });
+//empManager.AddEmployee(new Employee { Name = "Helena", Gender = Gender.Female, Position = Position.Manager });
+//empManager.AddEmployee(new Employee { Name = "Mike", Gender = Gender.Male, Position = Position.Administrator });
+//var stats = new EmployeeStatistics_DIP(empManager);
+//Console.WriteLine($"Number of female managers in our company is: {stats.CountFemaleManagers()}");
+var empManager = new EmployeeManager_DIC();
+empManager.AddEmployee(new Employee { Name = "Leen", Gender = Gender.Female, Position = Position.Manager });
+empManager.AddEmployee(new Employee { Name = "Helena", Gender = Gender.Female, Position = Position.Manager });
+empManager.AddEmployee(new Employee { Name = "Mike", Gender = Gender.Male, Position = Position.Administrator });
+var stats = new EmployeeStatistics_DIP(empManager);
+Console.WriteLine($"Number of female managers in our company is: {stats.CountFemaleManagers()}");
+#endregion
 #endregion
